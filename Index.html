@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Python</title>
+ <style>
+ body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: #f5f5f5;
+ margin: 0;
+ padding: 0;
+ }
+ header, nav, section, footer {
+ margin: 20px;
+ padding: 20px;
+ background-color: #ffffff;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+ nav a {
+ margin: 0 15px;
+ text-decoration: none;
+ color: #e0f146;
+ font-weight: bold;
+ cursor: pointer;
+ }
+ section {
+ display: none;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ margin-top: 20px;
+ }
+ </style>
+ <script>
+ function showSection(sectionId) {
+   document.getElementById('inicio').style.display = 'none';
+   document.getElementById('caracteristicas').style.display = 'none';
+   document.getElementById('descarga').style.display = 'none';
+   document.getElementById('video').style.display = 'none';
+   document.getElementById('creadores').style.display = 'none';
+   document.getElementById('contacto').style.display = 'none';
+   document.getElementById(sectionId).style.display = 'block';
+ }
+ </script>
+</head>
+<body>
+ <nav>
+ <a onclick="showSection('inicio')">Inicio</a>
+ <a onclick="showSection('caracteristicas')">Características</a>
+ <a onclick="showSection('descarga')">Descarga</a>
+ <a onclick="showSection('video')">Video</a>
+ <a onclick="showSection('creadores')">Creadores</a>
+ <a onclick="showSection('contacto')">Contáctenos</a>
+ </nav>
+ <header id="inicio">
+ <h1>Python</h1>
+ <p>Python es un lenguaje de programación de alto nivel, interpretado, interactivo y orientado a objetos.
+    Está diseñado con una filosofía que pone especial énfasis en la legibilidad del código y la simplicidad de su sintaxis.
+    
+    La meta principal de Python es permitir a los programadores expresar conceptos de forma clara y concisa, con menos líneas de código en comparación con otros lenguajes como Java o C++.</p>
+ <img src="Img/images.png" sizes=""width="300" height="200"> 
+ </header>
+ <section id="caracteristicas">
+ <h2>Características principales de Python</h2>
+ <table>
+ <tr>
+ <th>Característica</th>
+ </tr>
+ <tr>
+ <td>Fácil de aprender y usar</td>
+ <td>Ideal tanto para principiantes como para expertos..</td>
+ </tr>
+ <tr>
+ <td>Lenguaje interpretado</td>
+ <td>Python no necesita compilarse. Es ejecutado línea por línea por un intérprete, lo que facilita la depuración y experimentación rápida..</td>
+ </tr>
+ <tr>
+ <td>Sintaxis clara y legible</td>
+ <td>La estructura del código es simple y utiliza indentación obligatoria para delimitar bloques (sin llaves {} ni end)..</td>
+ </tr>
+ <tr>
+ <td>Multiplataforma</td>
+ <td>Corre en Windows, Linux, macOS, e incluso en dispositivos móviles y microcontroladores..</td>
+ </tr>
+ </table>
+ <img src="Img/Cara.png" sizes=""width="800" height="600"> 
+ </section>
+ <section id="descarga">
+ <h2>Descargar Python</h2>
+ <p>Puedes descargar la última versión de Python desde su sitio oficial:</p>
+ <a href="https://www.python.org/downloads/" target="_blank"             >Descargar Python</a>
+ <img src="Img/Des.png" alt="Descargar Python">
+ </section>
+ <section id="video">
+ <h2>Video Animaker</h2>
+ 
+ <iframe src="https://app.animaker.com/animo/yC1C3eqDlEKSjkOz/?paymentGate=free" title="Animaker video"></iframe>
+
+</section>
+
+ <section id="creadores">
+ <h2>Creadores</h2>
+ <p>¿Quién creó Python y por qué?
+     Historia breve
+    Creador: Guido van Rossum, un programador neerlandés.
+    
+    Año de inicio: 1989, durante sus vacaciones de Navidad.
+    
+    Primer lanzamiento público: 1991 (Python 0.9.0).
+    
+    Guido trabajaba en el Centrum Wiskunde & Informatica (CWI) en los Países Bajos, donde participaba en el desarrollo de un lenguaje educativo llamado ABC. Aunque ABC tenía ideas geniales, tenía limitaciones importantes.
+    
+    Entonces, Guido van Rossum pensó:
+    "Voy a diseñar un lenguaje mejor, más flexible, que conserve las buenas ideas de ABC pero sin sus errores."
+    
+    Decidió llamarlo Python en homenaje a su grupo de comedia favorito: Monty Python’s Flying Circus.
+    
+     Objetivos originales de Guido:
+    Crear un lenguaje que fuera fácil de aprender y usar para principiantes.
+    
+    Mantenerlo lo suficientemente potente para programadores profesionales.
+    
+    Favorecer la productividad: menos código, menos errores.
+    
+    Soportar múltiples paradigmas de programación.</p>
+ <img src="Img/Crea.jpg" sizes=""width="600" height="400">  
+ </section>
+ <section id="contacto">
+ <h2>Contáctenos</h2>
+ <form>
+ <input type="text" name="nombre" placeholder="Nombre" required>
+ <input type="email" name="correo" placeholder="Correo electrónico" required>
+ <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+ <button type="submit">Enviar</button>
+ </form>
+ <img src="Img/contact.png" alt="Formulario de Contacto">
+ </section>
+ <footer>
+ <p>© 2025 Python - Proyecto de Página Web Por Alberto Duran</p>
+ </footer>
+ <script>
+   document.getElementById('inicio').style.display = 'block'; 
+ </script>
+</body>
+</html>
